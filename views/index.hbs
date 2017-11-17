@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internet Fluctuation Speed</title>
+</head>
+<body>
+    <h1>Internet Fluctuation Speed</h1>
+
+    <div id="container"></div>
+
+    <label>Server Sponsor</label>
+    <select id="sponsor" onchange="filterSponsor(this.value)">
+        <option value="All">All</option>
+    </select>
+
+    <a href="#" onclick="toggle('download')">Toogle Download</a>
+    <a href="#" onclick="toggle('upload')">Toogle Upload</a>
+
+    <table id="table-sponsors" >
+        <thead>
+            <tr>
+                <th>Sponsor</th>
+                <th>Number of request</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/highstock.js"></script>
+    <script src="./js/exporting.js"></script>
+    <script src="./js/bundle.js"></script>
+
+
+</body>
+</html>
